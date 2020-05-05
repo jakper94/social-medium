@@ -1,1 +1,12 @@
 @import "../../resources/variables.scss";
+.onGoing{
+    margin: 40px 250px;
+    h1{
+        margin:10px;
+    }
+    .coursBoxes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}

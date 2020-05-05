@@ -1,0 +1,12 @@
+@import "../../../resources/variables.scss";
+.courseBox{
+    width:300px;
+    height:300px;
+    border-radius: 10px;
+    margin:10px 0;
+    background-color: gray;
+    img{
+        width:100%;
+        border-radius:10px 10px 0 0 ;
+    }
+}

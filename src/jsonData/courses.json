@@ -1,0 +1,32 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "courseName": "for social media",
+      "imgUrl": "/images/peter-wendt.jpg",
+      "created-timestamp": "1588686286",
+      "ongoing": true
+    },
+    {
+      "id": 2,
+      "courseName": "something",
+      "imgUrl": "/images/peter-wendt.jpg",
+      "created-timestamp": "1588686286",
+      "ongoing": true
+    },
+    {
+        "id": 3,
+        "courseName": "something",
+        "imgUrl": "/images/peter-wendt.jpg",
+        "created-timestamp": "1588686286",
+        "ongoing": true
+      },
+      {
+        "id": 4,
+        "courseName": "something",
+        "imgUrl": "/images/peter-wendt.jpg",
+        "created-timestamp": "1588686286",
+        "ongoing": true
+      }
+  ]
+}

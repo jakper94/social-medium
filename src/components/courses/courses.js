@@ -1,13 +1,19 @@
 import React from "react";
 import "./courses.scss";
+import CourseBox from "./courseBox/courseBox";
+import courseData from "../../jsonData/courses.json";
 
 const Courses = () => {
+  const courses = courseData.courses;
   return (
-    <section>
-      <div>
-        <h1>Courses</h1>
+    <div className="onGoing">
+      <h1>Ongoing courses</h1>
+      <div className="coursBoxes">
+        {courses.map((cours) => (
+          <CourseBox courseName={cours.courseName} imgUrl={cours.imgUrl} />
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
