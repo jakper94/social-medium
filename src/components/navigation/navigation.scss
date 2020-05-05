@@ -17,7 +17,6 @@ $navigation-width: 120px;
   height: $navigation-height;
   background-color: $color-navigation;
   z-index: 10000;
-
   .logo {
     display: flex;
     flex-flow: column;
@@ -35,7 +34,6 @@ $navigation-width: 120px;
       }
     }
   }
-
   .menu {
     a {
       display: inline-block;
