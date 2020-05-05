@@ -1,27 +1,27 @@
 @import "../../resources/variables.scss";
 
-$navigation-height: 840px;
-$navigation-width: 120px;
+
+$navigation-width: 200px;
 
 .navigation {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  padding: 0 50px;
+  bottom: 0;
+  padding: 0px;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   width: $navigation-width;
-  height: $navigation-height;
+ 
   background-color: $color-navigation;
   z-index: 10000;
   .logo {
     display: flex;
     flex-flow: column;
     img {
-      height: $navigation-height - 25px;
+      height: $navigation-width - 25px;
     }
     .text {
       color: $color-text;
@@ -29,6 +29,7 @@ $navigation-width: 120px;
       flex-flow: column;
       justify-content: center;
       align-items: flex-start;
+      
       h4 {
         margin: 2px;
       }
@@ -37,7 +38,7 @@ $navigation-width: 120px;
   .menu {
     a {
       display: inline-block;
-      padding: 0 10px;
+      padding: 0 30px;
       font-size: 1rem;
       color: $color-navigation-text;
 
