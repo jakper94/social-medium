@@ -20,6 +20,9 @@ const Navigation = () => {
         <NavLink exact to="/courses" onClick={() => scrollToTop()}>
           Courses
         </NavLink>
+        <NavLink exact to="/assignments" onClick={() => scrollToTop()}>
+          Assignments
+        </NavLink>
         <NavLink exact to="/projects" onClick={() => scrollToTop()}>
           projects
         </NavLink>
