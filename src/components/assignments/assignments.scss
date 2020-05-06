@@ -1,1 +1,19 @@
 @import "../../resources/variables.scss";
+@import "../../resources/site.scss";
+
+.assignments{
+      margin: 10px 200px;
+    .assignmentboxes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+.quizes{
+    margin: 70px 200px;
+    .quizboxes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
