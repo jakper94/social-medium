@@ -5,7 +5,46 @@
       "courseName": "Technology for social media ",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
-      "ongoing": true
+      "ongoing": true,
+      "assignments": [
+        {
+          "id": 1,
+          "title": "OAuth2",
+          "information": "This assignment is to create a application that",
+          "submitted": true,
+          "passed": true
+        },
+        {
+          "id": 2,
+          "title": "Lo-fi",
+          "information": "This assignment is to create a lofi",
+          "submitted": true,
+          "passed": true
+        },
+        {
+          "id": 3,
+          "title": "Hi-Fi",
+          "information": "This assignment is to create a Hi-fi",
+          "submitted": true,
+          "passed": false
+        }
+      ],
+      "quizes": [
+        {
+          "id": 1,
+          "title": "quiz1",
+          "information": "This assignment is to create a application that",
+          "submitted": true,
+          "passed": true
+        },
+        {
+          "id": 2,
+          "title": "quiz2",
+          "information": "This assignment is to create a lofi",
+          "submitted": true,
+          "passed": true
+        }
+      ]
     },
     {
       "id": 2,
@@ -15,18 +54,18 @@
       "ongoing": true
     },
     {
-        "id": 3,
-        "courseName": "something",
-        "imgUrl": "/images/peter-wendt.jpg",
-        "created-timestamp": "1588686286",
-        "ongoing": true
-      },
-      {
-        "id": 4,
-        "courseName": "something",
-        "imgUrl": "/images/peter-wendt.jpg",
-        "created-timestamp": "1588686286",
-        "ongoing": true
-      }
+      "id": 3,
+      "courseName": "something",
+      "imgUrl": "/images/peter-wendt.jpg",
+      "created-timestamp": "1588686286",
+      "ongoing": true
+    },
+    {
+      "id": 4,
+      "courseName": "something",
+      "imgUrl": "/images/peter-wendt.jpg",
+      "created-timestamp": "1588686286",
+      "ongoing": true
+    }
   ]
 }
