@@ -2,14 +2,14 @@
   "courses": [
     {
       "id": 1,
-      "courseName": "for social media",
+      "courseName": "Technology for social media ",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
       "ongoing": true
     },
     {
       "id": 2,
-      "courseName": "something",
+      "courseName": "Interaction in smart enviromentsn",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
       "ongoing": true
