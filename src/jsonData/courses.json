@@ -4,6 +4,8 @@
       "id": 1,
       "courseName": "Technology for social media ",
       "imgUrl": "/images/peter-wendt.jpg",
+      "info": "In the first part of this course, we will go over some fundamentals of social media. Later, you will develop your own social medium and implement a prototype.",
+      "newCourse": true,
       "created-timestamp": "1588686286",
       "ongoing": true,
       "assignments": [
@@ -48,9 +50,10 @@
     },
     {
       "id": 2,
-      "courseName": "Interaction in smart enviromentsn",
+      "courseName": "Interaction in smart enviroments",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
+      "newCourse": true,
       "ongoing": true
     },
     {
@@ -58,6 +61,7 @@
       "courseName": "something",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
+      "newCourse": false,
       "ongoing": true
     },
     {
@@ -65,6 +69,7 @@
       "courseName": "something",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
+      "newCourse": false,
       "ongoing": true
     }
   ]
