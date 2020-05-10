@@ -1,5 +1,17 @@
 @import "../../../../resources/variables.scss";
 .courseInfo{
     background-color: $box-background-color;
-    height:1000px;
+    height:600px;
+    padding:10px;
+    h3{
+        float:left;
+        color: $color-header-text;
+        font-size: 16;
+
+    }
+    p{
+        justify-content: left;
+        float:left;
+        width:70%;
+    }
 }

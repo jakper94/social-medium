@@ -10,8 +10,13 @@ const Courses = () => {
       <h1>Ongoing courses</h1>
       <div className="coursBoxes">
         {courses.map((cours) => (
-          <CourseBox courseName={cours.courseName} imgUrl={cours.imgUrl} info={cours.info} newCourse={cours.newCourse}/>
-          
+          <CourseBox
+            courseName={cours.courseName}
+            imgUrl={cours.imgUrl}
+            info={cours.info}
+            newCourse={cours.newCourse}
+            id={cours.id}
+          />
         ))}
       </div>
     </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navigation.scss";
-
 const Navigation = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -10,7 +9,7 @@ const Navigation = () => {
     <div className="navigation">
       <div className="logo">
         <div className="text">
-            <h4>cool name</h4>
+          <h4>cool name</h4>
         </div>
       </div>
       <div className="menu">

@@ -1,11 +1,11 @@
 import React from "react";
 import "./coursePage.scss";
 import CourseInfo from './courseInfo/courseInfo'
-const CoursePage = () => {
+const CoursePage = ({info}) => {
   return (
     <div className="coursePage-container">
         <div className="course-info">
-        <CourseInfo/>
+        <CourseInfo courseInfo={info}/>
         </div>
     </div>
   );
