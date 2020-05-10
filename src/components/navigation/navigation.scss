@@ -1,7 +1,7 @@
 @import "../../resources/variables.scss";
 
 
-$navigation-width: 200px;
+$navigation-width: 14%;
 
 .navigation {
   position: fixed;
@@ -21,7 +21,6 @@ $navigation-width: 200px;
     display: flex;
     flex-flow: column;
     img {
-      height: $navigation-width - 25px;
     }
     .text {
       color: $color-text;

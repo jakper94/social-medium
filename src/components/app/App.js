@@ -8,6 +8,7 @@ import Assignments from "../assignments/assignments";
 import RightSideBar from "../right-side-bar/right-side-bar";
 import "./app.scss";
 import "../../resources/site.scss";
+import CoursePage from "../courses/coursePage/coursePage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/courses" component={Courses} />
           <Route path="/assignments" component={Assignments} />
           <Route path="/projects" component={Projects} />
+          <Route path ="/course" component={CoursePage} />
           <Route from="*" to="/" component={Home} />
         </Switch>
         

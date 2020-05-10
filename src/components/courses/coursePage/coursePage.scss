@@ -1,0 +1,19 @@
+@import "../../../resources/variables.scss";
+
+.coursePage-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+  margin:0 14%;
+  > div {
+   
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .course-info {
+    grid-column: 1/ span 4;
+  }
+}

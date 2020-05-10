@@ -14,17 +14,17 @@ const CourseBox = ({ courseName, imgUrl, info, newCourse}) => {
  }
     
   return (
-    <div className="courseBox">
+   
+    <a href={"#/course"}className="courseBox">
         <div className="imageBox">
       <img src={process.env.PUBLIC_URL + imgUrl} alt={courseName}/>
-      </div>
-      
-      
+      </div> 
       <h2>{courseName}</h2>
   <p>{info}</p>
   {checkIfNewCourse()}
 
-    </div>
+    </a>
+  
   );
 };
 
