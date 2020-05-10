@@ -1,0 +1,54 @@
+{
+    "assignments": [
+        {
+            "id": 1,
+            "title": "Ouath2",
+            "information": "In this assignment you should create an inlogg through a authorization server. ",
+            "duration": 20,
+            "submitted": true,
+            "corrected":true,
+            "passed": true
+        },
+        {
+            "id": 2,
+            "title": "Lo-Fi prototype",
+            "information": "Your assignment is to create a lo-Fi prototype of a education social media",
+            "duration":20,
+            "submitted": true,
+            "corrected":true,
+            "passed": false
+        },
+        {
+            "id": 3,
+            "title": "Hi-Fi prototype",
+            "information": "Your assignment is to create a Hi-Fi protoype from the Lo-Fi prototype",
+            "duration":50,
+            "submitted": true,
+            "corrected":false,
+            "passed": false
+        }
+    ],
+    "quiz":[
+        {
+            "id": 1,
+            "quizName" : "Quiz 1",
+            "information": "A quiz about Ouath2",
+            "submitted" : true,
+            "progress":80
+        },
+        {
+            "id": 2,
+            "quizName" : "Quiz 2",
+            "information": "A quiz about Social Media",
+            "submitted" : true,
+            "progress": 100
+        },
+        {
+            "id": 3,
+            "quizName" : "Quiz 3",
+            "information": "A quiz about marketing",
+            "submitted" : false,
+            "progress": 0
+        }
+    ]
+}

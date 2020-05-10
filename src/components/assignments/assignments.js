@@ -2,30 +2,50 @@ import React, { Component } from "react";
 import "./assignments.scss";
 import Assignmentbox from "./assignmentbox/assignmentbox";
 import QuizBox from "./quizbox/quixbox";
+import assignmentData from "../../jsonData/assignments.json";
+
 
 const Assignments = () => {
+  const assignments = assignmentData.assignments;
+  const quizes = assignmentData.quiz;
+
   return (
     <section>
       <div className="assignments">
         <h1>Assignments</h1>
         <div className="assignmentboxes">
-          <Assignmentbox assignment={"Assignment 1"} status={"Passed"}/>
-          <Assignmentbox assignment={"Assignment 2"} status={"Not Passed"}/>
-          <Assignmentbox assignment={"Assignment 3"} status={"Submitted"}/>
-          <Assignmentbox assignment={"Assignment 4"} status={"Not Submitted"}/>
-      </div>
+          {
+            assignments.map((assignment) => (
+              <Assignmentbox 
+                  assignment={assignment.title} 
+                  corrected={assignment.corrected}
+                  submitted={assignment.submitted} 
+                  passed={assignment.passed} 
+                  info={assignment.information}
+                  duration={assignment.duration}/>
+            ))
+          }
+        </div>
       </div>
 
       <div className="quizes">
           <h1>Quiz and Tests</h1>
           <div className="quizboxes">
-          <QuizBox type={"Quiz 1"} status={""}/>
-          <QuizBox type={"Test 1"} status={""}/>
-          <QuizBox type={"Test 2"} status={""}/>
+            {
+              quizes.map((quiz) => (
+                 <QuizBox 
+                    quizName={quiz.quizName} 
+                    submitted={quiz.submitted} 
+                    information={quiz.information}
+                    progress={quiz.progress}/>
+              ))
+            }
+          </div>
       </div>
-      </div>
+      
     </section>
   );
 };
+
 
 export default Assignments;

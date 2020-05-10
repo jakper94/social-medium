@@ -1,9 +1,42 @@
 @import "../../../resources/variables.scss";
 
-.quizBox{
-    width:250px;
-    height:180px;
-    margin:10px 0;
-    background-color: lightgray;
-    border-radius: 10px 10px 10px 10px;
+.quiz{
+    h4{
+        color:$color-header-text;
+        font-weight: 1000;        
+        margin: 10px 0 0 10px;
+    }
+    .quizBox{
+        width:250px;
+        height:180px;
+        margin:30px 0 10px;
+        background-color: $box-background-color;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .submitted{
+            h2{
+              float:left;
+                margin: 30px 70px 20px;
+                color: $box-text-color;
+            }
+        }
+        .notSubmitted{
+            h2{
+                float:left;
+                margin: 30px 60px 20px;
+                color: $box-text-color;
+            }    
+        }
+        .info{
+            margin:0px 30px 0px;
+            color: $box-text-color;
+        }
+        .progress{
+            margin-top:50px;
+            p{
+                font-weight: 100;        
+            } 
+        }
+    }
 }

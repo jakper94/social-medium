@@ -1,21 +1,53 @@
 import React from "react";
 import "./assignmentbox.scss"
 
-const Assignmentbox = ( {assignment, status}) => {
+const Assignmentbox = ( {assignment,corrected, submitted, passed, info, duration}) => {
+ 
+  const checkStatus=()=>{
+    if (submitted)  {
+      if(corrected){
+        if(passed){
+          return (
+            <div className="passed">
+              <h2>Passed</h2>
+            </div>
+          )
+        } else if(!passed){
+          return(
+            <div className="notPassed">
+              <h2>Not passed</h2>
+            </div>
+          )
+        } 
+      } else{
+        return(
+        <div className="submitted">
+            <h2>Submitted</h2>
+        </div>
+         ) }
+    } else{
+        return(
+          <div className="notSubmitted">
+            <h2>Not submitted</h2>
+          </div>
+        )
+      } 
+  }
 
-    //Add to database if assignment is submitted or not. (Sumbitted text?)
-    //If passed .... (change text to passed?)
-    //If not passed ... (change text to not passed?)
   return (
-      <div>
-    <div className="assignmentBox">
-        {/*  Add image? */}
-       
-        <h2>{status}</h2>
-
-    </div>
-    <h4>{assignment}</h4>
+    <div className="assignment">
+      <div className="assignmentBox">
+        {checkStatus()}
+        <div className="info">
+          <p>{info}</p> 
+            <div className="duration">
+              <p>Expected duration: {duration} hours</p>
+            </div>
+        </div>
       </div>
+          <h4>{assignment} </h4>
+    </div>  
+      
   );
 };
 

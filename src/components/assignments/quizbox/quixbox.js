@@ -1,18 +1,38 @@
 import React from "react";
 import "./quizbox.scss"
 
-const QuizBox = ( {type, status}) => {
+const QuizBox = ( {quizName, information, submitted, progress}) => {
 
-  //Progress bars of how well the user did on the test?
+  const checkStatus=()=>{
+    if(submitted){
+      return(
+        <div className="submitted">
+          <h2>Submitted</h2>
+        </div>
+      )
+    } else{
+      return(
+        <div className="notSubmitted">
+          <h2>Not started</h2>
+        </div>
+      )
+    }
+  }
 
   return (
-      <div>
-    <div className="quizBox">
-        {/*  Add image? */}
-
-    </div>
-    <h4>{type}</h4>
+    <div className="quiz">
+      <div className="quizBox">
+          {checkStatus()}
+          <div className="info">
+              <p>{information}</p>
+              <div className="progress">
+                  <p>Progress: {progress}%</p>
+              </div>
+          </div>
+          
       </div>
+      <h4>{quizName}</h4>
+    </div>
   );
 };
 
