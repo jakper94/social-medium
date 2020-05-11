@@ -1,0 +1,29 @@
+{
+  "notifications": [
+    {
+      "id": 1,
+      "message": "Deadline for essay in economics Monady, May 11",
+      "icon": "goBell"
+    },
+    {
+      "id": 2,
+      "message": "Assignment 3 opened",
+      "icon": "lock"
+    },
+    {
+      "id": 3,
+      "message": "You have one course report to fill in. ",
+      "icon": "form"
+    },
+    {
+      "id": 4,
+      "message": "You have one course report to fill in. ",
+      "icon": "form"
+    },
+    {
+      "id": 5,
+      "message": "You have one course report to fill in. ",
+      "icon": "form"
+    }
+  ]
+}
