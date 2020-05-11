@@ -1,0 +1,13 @@
+@import "../../../resources/variables.scss";
+
+.newsfeed {
+  background-color: white;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+
+  h1 {
+    text-align: center;
+    margin: 4%;
+  }
+}

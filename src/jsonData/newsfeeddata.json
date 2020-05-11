@@ -1,0 +1,29 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "name": "Leif Anderson",
+      "imgUrl": "/images/profile1.jpg",
+      "message": "Hello, this week we will have a mini test that exams...."
+    },
+
+    {
+      "id": 2,
+      "name": "Carole Jones",
+      "imgUrl": "/images/profile2.jpg",
+      "message": "The deadline for assignment 2 is on Monday and the examination is on Friday"
+    },
+    {
+      "id": 3,
+      "name": "Steve Johnson",
+      "imgUrl": "/images/profile3.jpg",
+      "message": "Does anybody know how to make a website? or is it better to google?"
+    },
+    {
+      "id": 4,
+      "name": "Buddy Nelson",
+      "imgUrl": "/images/profile4.jpg",
+      "message": "Hi students, I have opened up assignment 2 so you can start working on that as soon as possible keep in mind that deadline is in three weeks from today. And also you have to write a summary and a short essay. "
+    }
+  ]
+}
