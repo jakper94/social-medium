@@ -38,7 +38,7 @@ const Assignmentbox = ( {assignment,corrected, submitted, passed, info, duration
     <div className="assignment">
       <div className="assignmentBox">
         {checkStatus()}
-        <div className="info">
+        <div className="assigInfo">
           <p>{info}</p> 
             <div className="duration">
               <p>Expected duration: {duration} hours</p>

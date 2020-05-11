@@ -23,7 +23,7 @@ const QuizBox = ( {quizName, information, submitted, progress}) => {
     <div className="quiz">
       <div className="quizBox">
           {checkStatus()}
-          <div className="info">
+          <div className="quizInfo">
               <p>{information}</p>
               <div className="progress">
                   <p>Progress: {progress}%</p>

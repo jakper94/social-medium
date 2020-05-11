@@ -15,7 +15,7 @@ $notPassed-color: #D7B17C;
     margin:30px 0 10px;
     background-color: $box-background-color;
     border-radius: 10px 10px 10px 10px; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: $box-shadow;
 
     .passed{
         h2{float: left;
@@ -31,6 +31,7 @@ $notPassed-color: #D7B17C;
         }
     }
     .notSubmitted{
+        background-color: $box-background-color;
         h2{
             float: left;
             margin: 30px 42px 20px;
@@ -45,7 +46,7 @@ $notPassed-color: #D7B17C;
         }
     }
 
-    .info{
+    .assigInfo{
         margin:0px 30px 0px;
         color: $box-text-color;
         
