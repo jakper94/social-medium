@@ -4,7 +4,9 @@ import CourseBox from "./courseBox/courseBox";
 import courseData from "../../jsonData/courses.json";
 
 const Courses = () => {
+  
   const courses = courseData.courses;
+  const completedCourses= courseData.completedCourses
   return (
     <div className="onGoing">
       <h1>Ongoing courses</h1>
@@ -16,6 +18,24 @@ const Courses = () => {
             info={cours.info}
             newCourse={cours.newCourse}
             id={cours.id}
+            hp={cours.hp}
+            participants={cours.participants}
+            inputProgress={cours.progress}
+          />
+        ))}
+      </div>
+      <h1>Completed courses</h1>
+      <div className="coursBoxes">
+        {completedCourses.map((completedCours) => (
+          <CourseBox
+            courseName={completedCours.courseName}
+            imgUrl={completedCours.imgUrl}
+            info={completedCours.info}
+            newCourse={completedCours.newCourse}
+            id={completedCours.id}
+            hp={completedCours.hp}
+            participants={completedCours.participants}
+            inputProgress={completedCours.progress}
           />
         ))}
       </div>

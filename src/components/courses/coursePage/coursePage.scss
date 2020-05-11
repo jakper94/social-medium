@@ -2,18 +2,23 @@
 
 .coursePage-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: 20% 20% 20% 20% 20%;
   grid-gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
-  margin:0 14%;
+  padding: 10px 40px ;
+  margin: 0 14%;
+
   > div {
-   
     text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 20px 10px;
+  }
+  .courseName {
+    grid-column: 1 / span 6;
   }
   .course-info {
-    grid-column: 1/ span 4;
+    grid-column: 1 / span 3;
+  }
+  .calendar {
+    grid-column: 4 / span 2;
+    background-color: $box-text-color;
   }
 }

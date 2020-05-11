@@ -4,7 +4,7 @@ import "./courseInfo.scss";
 const CourseInfo = ({courseInfo}) => {
   return (
     <div className="courseInfo">
-      <h3>Course Information</h3>
+      <h2>Course Information</h2>
       <p>
         {courseInfo}
         In the first part of this course, we will go over some fundamentals of

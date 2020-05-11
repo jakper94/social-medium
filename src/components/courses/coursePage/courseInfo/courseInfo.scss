@@ -2,16 +2,20 @@
 .courseInfo{
     background-color: $box-background-color;
     height:600px;
-    padding:10px;
-    h3{
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+
+    h2{
         float:left;
         color: $color-header-text;
-        font-size: 16;
+        font-size: 13;
 
     }
     p{
-        justify-content: left;
+        text-align: left;
         float:left;
-        width:70%;
+    
     }
 }
