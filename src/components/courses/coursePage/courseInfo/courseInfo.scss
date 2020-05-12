@@ -1,21 +1,74 @@
 @import "../../../../resources/variables.scss";
-.courseInfo{
-    background-color: $box-background-color;
-    height:600px;
-    padding:20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-
-    h2{
-        float:left;
-        color: $color-header-text;
-        font-size: 13;
-
+.courseInfo {
+  position: relative;  
+  display: flex;
+  flex-flow: column;
+  background-color: $box-background-color;
+  height: 600px;
+  width:600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  
+  .profiles {
+    display: flex;
+    flex-flow: row;
+  }
+  h2 {
+    float: left;
+    text-align: left;
+    color: $color-header-text;
+    font-size: 13;
+  }
+  p {
+    text-align: left;
+    float: left;
+  }
+  .literature {
+    a {
+      color: inherit;
+      margin: 3px;
+      .book1 {
+        width: 60px;
+        height: 70px;
+        margin: 20px 0;
+        img {
+          width: 60px;
+          height: 90px;
+          object-fit: cover;
+        }
+      }
     }
-    p{
-        text-align: left;
-        float:left;
-    
+  }
+  .software {
+    display: flex;
+    flex-flow: column;
+    .program1 {
+      margin: 20px 0;
+      .logo {
+        float: left;
+        height: 60px;
+        width: 60px;
+      }
     }
+  }
+  .participants {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    color: #1f1f1f;
+    float: left;
+    align-items: center;
+    margin: 20px 0;
+    .peopleicon {
+      margin: 5px;
+    }
+  }
+  .progressBar {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 80px;
+    margin: 20px;
+  }
 }

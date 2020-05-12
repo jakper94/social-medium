@@ -1,0 +1,28 @@
+@import "../../../../../resources/variables.scss";
+.profileBox {
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  h4 {
+    font-size: 0.8rem;
+  }
+  h5 {
+    color: $box-text-color;
+    font-size: 0.7rem;
+  }
+  .profileImage {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .quickLinks {
+    a {
+      color: inherit;
+      margin: 3px;
+    }
+  }
+}

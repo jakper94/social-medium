@@ -1,24 +1,44 @@
 @import "../../../resources/variables.scss";
-
-.coursePage-container {
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-gap: 10px;
-  padding: 10px 40px ;
-  margin: 0 14%;
-
-  > div {
-    text-align: center;
-    padding: 20px 10px;
-  }
+$right-side-width: 100%;
+$left-side-width: 100%;
+.coursePage {
+  margin: 30px 14%;
+ 
   .courseName {
-    grid-column: 1 / span 6;
+    padding: 30px 30px;
+    text-align: left;
   }
-  .course-info {
-    grid-column: 1 / span 3;
-  }
-  .calendar {
-    grid-column: 4 / span 2;
-    background-color: $box-text-color;
+  .coursePage-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+
+    .course-info {
+      margin: 0;
+    }
+    .right {
+      display: flex;
+      flex-flow: column;
+      .calendar-box {
+        height: 300px;
+        background-color: $box-background-color;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        margin: 0 0 40px 0;
+      }
+      .news {
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        background-color: $box-background-color;
+        h2 {
+          float: left;
+          margin: 20px;
+          text-align: left;
+          color: $color-header-text;
+          font-size: 13;
+        }
+      }
+    }
   }
 }

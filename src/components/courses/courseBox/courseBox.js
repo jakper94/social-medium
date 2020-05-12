@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./courseBox.scss";
 import { FaGraduationCap } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+import ProgressBar from "../../progressBar/progressBar";
 
 const CourseBox = ({
   courseName,
@@ -24,21 +23,6 @@ const CourseBox = ({
       );
     }
   };
-  const setProgressbar = (progress) => {
-    const percentage = progress;
-    return (
-      <CircularProgressbar
-        value={percentage}
-        text={`${percentage}%`}
-        styles={buildStyles({
-          textSize: "30px",
-          pathColor: `rgba(119, 185, 74, ${percentage / 20})`,
-          textColor: "#1f1f1f",
-          trailColor: "#fafafa",
-        })}
-      />
-    );
-  };
 
   return (
     <a href={"#/course/" + id} className="courseBox">
@@ -57,7 +41,7 @@ const CourseBox = ({
           <IoIosPeople className="peopleicon" />{" "}
           <h4>{participants} participants</h4>
         </div>
-        <div className="progressBar">{setProgressbar(inputProgress)}</div>
+        <ProgressBar inputProgress={inputProgress} />
       </div>
       <div className="open">
         <h2>Click to open</h2>
