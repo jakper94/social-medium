@@ -1,7 +1,7 @@
 import React from "react";
 import "./assignmentbox.scss"
 
-const Assignmentbox = ( {assignment,corrected, submitted, passed, info, duration}) => {
+const Assignmentbox = ( {assignment, id, corrected, submitted, passed, info, duration}) => {
  
   const checkStatus=()=>{
     if (submitted)  {
@@ -35,16 +35,21 @@ const Assignmentbox = ( {assignment,corrected, submitted, passed, info, duration
   }
 
   return (
+    
     <div className="assignment">
+      <a href={"#/assignment/" + id }  >
       <div className="assignmentBox">
         {checkStatus()}
         <div className="assigInfo">
+          <div className="infoInfo">
           <p>{info}</p> 
+          </div>
             <div className="duration">
               <p>Expected duration: {duration} hours</p>
             </div>
         </div>
-      </div>
+        </div>
+      </a>
           <h4>{assignment} </h4>
     </div>  
       
