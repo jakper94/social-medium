@@ -8,6 +8,9 @@ const Navigation = () => {
   return (
     <div className="navigation">
       <div className="logo">
+        <div className="profileCirkle">
+          
+        </div>
         <div className="text">
           <h4>cool name</h4>
         </div>

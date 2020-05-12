@@ -1,6 +1,5 @@
 @import "../../resources/variables.scss";
 
-
 $navigation-width: 14%;
 
 .navigation {
@@ -14,13 +13,21 @@ $navigation-width: 14%;
   align-items: center;
   justify-content: center;
   width: $navigation-width;
- 
+
   background-color: $color-navigation;
   z-index: 10000;
   .logo {
+   
     display: flex;
     flex-flow: column;
-    img {
+    .profileCirkle {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      background-color: gray;
+      .profileImage{
+        width:70px;
+      }
     }
     .text {
       color: $color-text;
@@ -28,7 +35,7 @@ $navigation-width: 14%;
       flex-flow: column;
       justify-content: center;
       align-items: flex-start;
-      
+
       h4 {
         margin: 2px;
       }
