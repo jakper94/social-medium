@@ -12,12 +12,13 @@ const Assignments = () => {
   return (
     <section>
       <div className="assignments">
-        <h1>Assignments</h1>
+        <h1 className="assignmentHead">Assignments</h1>
         <div className="assignmentboxes">
           {
             assignments.map((assignment) => (
               <Assignmentbox 
                   assignment={assignment.title} 
+                  id = {assignment.id}
                   corrected={assignment.corrected}
                   submitted={assignment.submitted} 
                   passed={assignment.passed} 
