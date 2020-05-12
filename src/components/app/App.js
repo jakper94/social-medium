@@ -9,27 +9,25 @@ import RightSideBar from "../right-side-bar/right-side-bar";
 import "./app.scss";
 import "../../resources/site.scss";
 import CoursePage from "../courses/coursePage/coursePage";
-import courseData from "../../jsonData/courses.json"
+import courseData from "../../jsonData/courses.json";
 const App = () => {
   const courses = courseData.courses;
   return (
     <HashRouter>
       <div className="app">
-      <RightSideBar />
+        <RightSideBar />
         <Navigation />
-       
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/courses" component={Courses} />
           <Route path="/assignments" component={Assignments} />
           <Route path="/projects" component={Projects} />
-          {courses.map((cours)=>(
-            <Route path ={"/course/" + cours.id} component={CoursePage} />
+          {courses.map((cours) => (
+            <Route path={"/course/" + cours.id} component={CoursePage} />
           ))}
-          
+
           <Route from="*" to="/" component={Home} />
         </Switch>
-        
       </div>
     </HashRouter>
   );

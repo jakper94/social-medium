@@ -1,20 +1,16 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navigation.scss";
+import Oauth from "../oauth/oauth";
 const Navigation = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
   return (
     <div className="navigation">
-      <div className="logo">
-        <div className="profileCirkle">
-          
+      <div className="oauth">
+        <Oauth />
         </div>
-        <div className="text">
-          <h4>cool name</h4>
-        </div>
-      </div>
       <div className="menu">
         <NavLink exact to="/" onClick={() => scrollToTop()}>
           Home

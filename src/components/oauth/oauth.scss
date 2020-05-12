@@ -1,0 +1,40 @@
+@import "../../resources/variables.scss";
+.isSignedIn {
+  height: 300px;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: space-between;
+  img {
+    margin: 10px 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  h4 {
+    color: $color-navigation-text;
+  }
+  .sign-out-button {
+    width: 70px;
+    border-radius: 10px;
+    background-color: gray;
+    h4 {
+      font-size: 12px;
+      padding: 0;
+    }
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+.notSignedIn {
+  height: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: space-between;
+}

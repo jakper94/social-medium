@@ -6,11 +6,11 @@ import { AiFillUnlock } from "react-icons/ai";
 import { AiOutlineForm } from "react-icons/ai";
 
 const getIcon = (type) => {
-  if (type == "goBell") {
+  if (type === "goBell") {
     return <GoBell />;
-  } else if (type == "lock") {
+  } else if (type === "lock") {
     return <AiFillUnlock />;
-  } else if (type == "form") {
+  } else if (type === "form") {
     return <AiOutlineForm />;
   }
 };
