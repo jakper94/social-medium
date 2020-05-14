@@ -1,0 +1,46 @@
+@import "../../../resources/variables.scss";
+
+.groupBoxx{
+    height: 150px;
+    width: 275px;
+    background-color:$box-background-color;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    .groupName{
+        padding-top: 10px;
+        h2{
+            color: $color-header-text;
+        }
+        .groupMembers{
+            padding-top: 0px;
+            height: 110px;
+            width: 250px;
+            overflow: scroll;
+
+
+            .member{
+                margin-left: 13px;
+                
+                img {
+                
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-left: -170px;
+
+                  }
+        
+            .profImage{
+                margin: 5px;
+            }
+            .memName{
+                margin-top: -24px;
+            }
+            p{
+               margin-top: -7px;
+            }
+        }
+        }
+    }
+}

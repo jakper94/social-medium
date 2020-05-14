@@ -1,0 +1,41 @@
+@import "../../../resources/variables.scss";
+
+.submissionX{
+    height: 60px;
+    width: 100%;
+    background-color: $box-background-color;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    .Up-container{
+        display:flex;
+        flex-wrap: row;
+        .deadline{
+            margin-left: 60px;
+            h3{
+                color:$color-header-text;
+            }
+        }
+        .handIn{
+            margin-left: 25px;
+            margin-top: 0px;
+            font-size: 1.5em;
+
+            .handI{
+                color: $box-text-color;
+            }
+               
+            }
+    }
+  
+
+
+    
+    .submitted{
+        margin-top: 0px;
+        h3{
+            color:$passed-color;
+            font-weight: 400;
+        }
+    }
+
+}

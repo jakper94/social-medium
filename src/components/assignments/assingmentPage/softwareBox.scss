@@ -1,0 +1,29 @@
+@import "../../../resources/variables.scss";
+
+.softwareeBox{
+    width:480px;
+    min-width: 220px;
+    height:150px;
+    background-color: $box-background-color;
+    border-radius: 10px;
+     box-shadow: $box-shadow;
+     .softwareTitle{
+         text-align: left;
+         padding-top: 20px;   
+         padding-left: 20px;  
+         color: $color-header-text;
+     }
+     .softwareFiles{
+         float: left;
+         margin-top: 10px;
+         position: relative;  
+         display: flex;
+         flex-flow: row;
+        .pdf{
+            color:black;
+            padding-left: 30px;
+           font-size: 3em;
+        }
+     }
+    
+}

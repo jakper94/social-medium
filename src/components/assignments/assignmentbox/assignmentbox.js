@@ -1,6 +1,7 @@
 import React from "react";
 import "./assignmentbox.scss"
 
+
 const Assignmentbox = ( {assignment, id, corrected, submitted, passed, info, duration}) => {
  
   const checkStatus=()=>{
@@ -33,6 +34,8 @@ const Assignmentbox = ( {assignment, id, corrected, submitted, passed, info, dur
         )
       } 
   }
+
+  
 
   return (
     

@@ -1,0 +1,30 @@
+@import "../../../resources/variables.scss";
+
+
+.assigDescription{
+ 
+    width:660px;
+    min-width: 220px;
+    height:280px;
+    padding: 0px;
+    float: left;
+    overflow: scroll;
+
+    .assignInfo{
+        text-align: left;
+        margin-top: 10px;
+        width: 95%;
+
+        .assignDes{
+            margin-top: 0px;
+            text-align: left;
+            color:black;
+
+        }
+        .assignPresentation{
+            margin-top: 10px;
+            text-align: left;
+            color:black;
+        }
+    }
+}

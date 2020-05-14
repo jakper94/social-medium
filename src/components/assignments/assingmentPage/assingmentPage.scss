@@ -1,12 +1,56 @@
 @import "../../../resources/variables.scss";
 
+
 .assignmentPage {
-  margin: 30px 14%;
- 
+  margin: 0% 14%;
+  padding: 30px; 
+  background-color:  $color-background;
   .assignmentName {
-    padding: 30px 30px;
+    padding: 30px 0px 30px;
     text-align: left;
   }
-  
+  .column-container{
+    position: relative;  
+    display: flex;
+    flex-flow: column;
+    .over-container{
+      position: relative;  
+      display: flex;
+      flex-flow: row;
+      height: 300px;
+      .decsBox{
+        padding:0px;   
+      }
+      .right-container{
+        display: flex;
+        flex-flow: column;
+        width: 275px;
+        height: 300px;
+        margin-left: 40px;
+        .submissionBox{
+         margin:0px;
+        }
+        .groupBox{
+          margin-top: 30px;
+        }
+      }
+    } 
+    .literatureAndSoftware{
+      position: relative;  
+      display: flex;
+      flex-flow: row;
+      .literatureBox{
+        margin-top: 10px;   
+      }
+      .softwareBox{
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+    } 
+
+    .documentBox{
+      margin-top: 20px;
+    }
+} 
 }
 

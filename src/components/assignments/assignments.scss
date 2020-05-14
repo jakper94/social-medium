@@ -1,31 +1,30 @@
 @import "../../resources/variables.scss";
 .assignments{
-    margin: -4% 14%;
+    margin: 0% 14%;
     padding: 30px;
-    height: auto;
+    background-color:  $color-background;
+
 
         .assignmentHead{
             text-align: left;
-            margin-left: -53px;
-            font-size: 32px;
+            margin:  30px 0px 10px;
             color: $color-header-text; 
         }
     .assignmentboxes{
+        margin: 0px 5%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
 }
 .quizes{
-    margin: 100px 200px;
     h1{
-        float:left;
-        margin-top: -40px;
-        margin-left: -10px;
-        font-size: 30px;
-        color: $color-header-text;
+        text-align: left;
+            margin:  50px 0px 10px;
+            color: $color-header-text; 
     }
     .quizboxes{
+        margin: 5px 5%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;

@@ -1,5 +1,7 @@
 import React from "react";
 import "./quizbox.scss"
+import ProgressBar from "../../progressBar/progressBar";
+
 
 const QuizBox = ( {quizName, information, submitted, progress}) => {
 
@@ -24,9 +26,11 @@ const QuizBox = ( {quizName, information, submitted, progress}) => {
       <div className="quizBox">
           {checkStatus()}
           <div className="quizInfo">
-              <p>{information}</p>
+            <div className="infoInfo">
+            <p>{information}</p>
+            </div>
               <div className="progress">
-                  <p>Progress: {progress}%</p>
+              <ProgressBar inputProgress={progress} />
               </div>
           </div>
           
