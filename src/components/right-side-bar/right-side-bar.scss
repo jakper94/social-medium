@@ -5,7 +5,33 @@
   top: 0;
   right: 0;
   bottom: 0;
+  box-shadow: $box-shadow;
   background-color: $color-navigation;
-  width: 14%;
-  z-index: 10000;
+
+  .expanded {
+   
+    .calendar {
+      display: flex;
+      width:190px;
+      justify-content: center;
+      background-color: white;
+      margin: 5px;
+    }
+    .message{
+      width: 190px;
+    }
+  }
+  .iconBar {
+    width: 50px;
+    margin: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;  
+    .icon {
+      cursor: pointer;
+      margin: 10px;
+      color: $icon-color;
+    }
+  }
+ 
 }

@@ -39,19 +39,20 @@ class Oauth extends Component {
               className="sign-out-button"
               onClick={() => firebase.auth().signOut()}
             >
-              <h4>sign out</h4>
+              Sign out
             </div>
           </div>
         ) : (
           <div className="notSignedIn">
-            <h1>Welcome!</h1>
+            <h2>Welcome!</h2>
             <Popup
-              trigger={<button>Log in</button>}
+              trigger={<div className="login-button">Log in</div>}
               modal
               closeOnDocumentClick
               position="right center"
             >
               <div className="insidePopUp">
+                <h2>To log in to this page use one of the listed option below.</h2>
                 <StyledFirebaseAuth
                   uiConfig={this.uiConfig}
                   firebaseAuth={firebase.auth()}
