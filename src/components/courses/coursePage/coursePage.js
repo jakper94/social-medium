@@ -7,6 +7,7 @@ const CoursePage = ({ info, courseName }) => {
     <div className="coursePage">
       <h1 className="courseName">Technology for social media </h1>
       <div className="coursePage-container">
+
         <div className="course-info">
           <CourseInfo courseInfo={info} />
         </div>
@@ -18,6 +19,14 @@ const CoursePage = ({ info, courseName }) => {
             <h2>Newsfeed</h2>
           </div>
         </div>
+      </div>
+      <div className="quick-Links">
+        <h2>Quicklinks</h2>
+        <div className="links">
+        <a href="#/assignments/">assignment</a>
+        <a href="#/assignments/">assignment</a>
+        </div>
+        
       </div>
     </div>
   );

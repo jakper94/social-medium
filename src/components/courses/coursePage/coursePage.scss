@@ -3,7 +3,39 @@ $right-side-width: 100%;
 $left-side-width: 100%;
 .coursePage {
   margin: 30px 14%;
- 
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+
+  .quick-Links {
+    padding: 30px 30px;
+    margin: 0 40px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    background-color: $box-background-color;
+    text-align: left;
+    h2 {
+      color: $color-header-text;
+    }
+    .links {
+      display: flex;
+      flex-flow: row;
+
+      a {
+        border-radius: 10px;
+        padding: 5px 20px;
+        margin: 0 10px;
+        background-color: $button-color;
+        box-shadow: $box-shadow;
+        &:hover {
+          background-color: $button-hover-color;
+          color: $button-hover-text;
+        }
+      }
+    }
+  }
+
   .courseName {
     padding: 30px 30px;
     text-align: left;
@@ -14,6 +46,7 @@ $left-side-width: 100%;
     justify-content: space-evenly;
 
     .course-info {
+      height: 600px;
       margin: 0;
     }
     .right {
@@ -31,6 +64,7 @@ $left-side-width: 100%;
         border-radius: 10px;
         box-shadow: $box-shadow;
         background-color: $box-background-color;
+        margin: 0 0 40px 0;
         h2 {
           float: left;
           margin: 20px;
