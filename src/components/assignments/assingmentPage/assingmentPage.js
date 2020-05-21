@@ -7,33 +7,38 @@ import DocumentBox from "./documentBox";
 import GroupBox from "./groupBox";
 import SoftwareBox from "./softwareBox";
 import assignmentData from "../../../jsonData/assignments.json";
-import Assignments from "../assignments";
+import assignments from "../assignments";
+import { Route,Link } from 'react-router-dom';
 
 
+const AssingmentPage = ({match} ) => {
 
-
-const AssingmentPage = ({ id }) => {
   const assignments = assignmentData.assignments;
-
-
-/*   function filterById(assignments, id) {
-    return assignments.filter(function(assignments) 
-        {return (assignments['id'] == id);})[0];} */
+  var ID = match.params.assignID;
+  let Id = ID -1;
 
   return (
+    
     <div className="assignmentPage">
-      <h1 className="assignmentName">Course 1  >  Ouath2 </h1>
+     <h1 className="assignmentName">{assignments[Id].title}</h1>     
       <div className="column-container">
         <div className="over-container">
              <div className ="decsBox">
-                 <DescriptionBox descriptionBox/>
+                 <DescriptionBox 
+                 desc = {assignments[Id].description}/>
               </div>
               <div className="right-container">
                   <div className="submissionBox"> 
-                     <SubmissionBox submissionBox/>
+                     <SubmissionBox 
+                     submitted = {assignments[Id].submitted}
+                     corrected = {assignments[Id].corrected}
+                     passed = {assignments[Id].passed}
+                     deadline = {assignments[Id].deadline}
+                     /> 
                   </div>
                   <div className="groupBox">
-                       <GroupBox groupBox/>
+                       <GroupBox groupBox
+                      />
                    </div>
               </div>
         </div>
@@ -49,9 +54,6 @@ const AssingmentPage = ({ id }) => {
           <DocumentBox documentBox/>
         </div>
       </div>
-      
-        
-          
   </div>
   );
 };

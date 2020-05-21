@@ -30,7 +30,7 @@ const App = () => {
             <Route path={"/course/" + cours.id} component={CoursePage} />
           ))}
           {assignments.map((assignment)=>(
-            <Route path ={"/assignment/" + assignment.id} component={AssingmentPage} />
+            <Route path ={"/assignment/:assignID"} component={AssingmentPage} />
 
           )
           )}

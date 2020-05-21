@@ -12,7 +12,7 @@ const GroupBox = ( ) => {
 
             <div className="member">
 
-                <div class="profImage">
+                <div className="profImage">
                      <img src={process.env.PUBLIC_URL + "/images/profile2.jpg"}  alt={<h2>alt</h2>}/>
                  </div>
                 <p className="memName">Anna Andersson</p>
@@ -20,7 +20,7 @@ const GroupBox = ( ) => {
 
              <div className="member">
 
-                <div class="profImage">
+                <div className="profImage">
                      <img src={process.env.PUBLIC_URL + "/images/profile2.jpg"}  alt={<h2>alt</h2>}/>
                  </div>
                  <p className="memName">Stephen Williams</p>
@@ -28,7 +28,7 @@ const GroupBox = ( ) => {
 
             <div className="member">
 
-                <div class="profImage">
+                <div className="profImage">
                      <img src={process.env.PUBLIC_URL + "/images/profile2.jpg"}  alt={<h2>alt</h2>}/>
                  </div>
                  <p className="memName">Peter Swann</p> 
@@ -36,7 +36,7 @@ const GroupBox = ( ) => {
 
             <div className="member">
 
-                <div class="profImage">
+                <div className="profImage">
                      <img src={process.env.PUBLIC_URL + "/images/profile2.jpg"}  alt={<h2>alt</h2>}/>
                  </div>
                  <p className="memName">Anna Stone</p>
