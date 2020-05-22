@@ -56,10 +56,13 @@ const AssingmentPage = ({match} ) => {
         </div>
         <div className="literatureAndSoftware">
           <div className="literatureBox"> 
-            <LitteratureBox literatureBox/>
+            <LitteratureBox literatureBox
+            assignmentId = {Id}/>
+            
           </div>
           <div className="softwareBox">
-            <SoftwareBox softwareBox/>
+            <SoftwareBox softwareBox
+            assignmentId = {Id}/>
           </div>
         </div>
         <div className="documentBox"> 
