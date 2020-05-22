@@ -7,25 +7,40 @@ import DocumentBox from "./documentBox";
 import GroupBox from "./groupBox";
 import SoftwareBox from "./softwareBox";
 import assignmentData from "../../../jsonData/assignments.json";
-import assignments from "../assignments";
-import { Route,Link } from 'react-router-dom';
+
 
 
 const AssingmentPage = ({match} ) => {
 
-  const assignments = assignmentData.assignments;
   var ID = match.params.assignID;
   let Id = ID -1;
 
+  const assignments = assignmentData.assignments;
+
+  const checkGroupStatus = () =>{
+    if (assignments[Id].group){
+      return (     
+      <div className="groupBox">
+        <GroupBox
+          groupName = {assignments[Id].groupName}
+          assignId = {Id}
+            />
+      </div>
+      );
+    }
+  }
+
+ 
   return (
-    
     <div className="assignmentPage">
      <h1 className="assignmentName">{assignments[Id].title}</h1>     
       <div className="column-container">
         <div className="over-container">
              <div className ="decsBox">
                  <DescriptionBox 
-                 desc = {assignments[Id].description}/>
+                 description = {assignments[Id].description}
+                 presentation = {assignments[Id].presentation}
+                 />
               </div>
               <div className="right-container">
                   <div className="submissionBox"> 
@@ -36,10 +51,7 @@ const AssingmentPage = ({match} ) => {
                      deadline = {assignments[Id].deadline}
                      /> 
                   </div>
-                  <div className="groupBox">
-                       <GroupBox groupBox
-                      />
-                   </div>
+                  {checkGroupStatus()}
               </div>
         </div>
         <div className="literatureAndSoftware">
