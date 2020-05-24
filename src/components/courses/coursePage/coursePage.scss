@@ -21,13 +21,14 @@ $left-side-width: 100%;
     .links {
       display: flex;
       flex-flow: row;
-
+      padding: 10px 0 ;
       a {
         border-radius: 10px;
         padding: 5px 20px;
         margin: 0 10px;
         background-color: $button-color;
         box-shadow: $box-shadow;
+        color: $color-header-text;
         &:hover {
           background-color: $button-hover-color;
           color: $button-hover-text;

@@ -4,7 +4,7 @@ import CourseInfo from "./courseInfo/courseInfo";
 import Calendar from "./calendar/calendar";
 import courseData from "../../../jsonData/courses.json";
 const CompletedCoursePage = ({ match }) => {
-  var ID = match.params.id;
+  var ID = match.params.AssignID;
   let id = ID -1;
   const course = courseData.completedCourses;
     const teatchers = course[id].teatchers;

@@ -16,7 +16,6 @@ import courseData from "../../jsonData/courses.json";
 import assignmentData from "../../jsonData/assignments.json";
 const App = () => {
   const courses = courseData.courses;
-  const completedCourses = courseData.completedCourses;
   const assignments = assignmentData.assignments;
 
   return (
@@ -31,9 +30,6 @@ const App = () => {
           <Route path="/projects" component={Projects} />
           {courses.map((cours) => (
             <Route path={"/course/:assignID"} component={CoursePage} />
-          ))}
-          {completedCourses.map((course) => (
-            <Route path={"/course/:" + course.id} component={CompletedCoursePage} />
           ))}
           {assignments.map((assignment) => (
             <Route path={"/assignment/:assignID"} component={AssingmentPage} />

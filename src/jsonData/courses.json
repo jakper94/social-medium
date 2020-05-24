@@ -115,7 +115,7 @@
   ],
   "completedCourses": [
     {
-      "id": 6,
+      "id": 1,
       "linkName": "course1",
       "courseName": "Technology for social media ",
       "imgUrl": "/images/peter-wendt.jpg",
@@ -139,7 +139,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 2,
       "linkName": "course2",
       "courseName": "Interaction in smart enviroments",
       "imgUrl": "/images/peter-wendt.jpg",
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 3,
       "linkName": "course1",
       "courseName": "Technology for social media ",
       "longInfo": "In the first part of this course, we will go over some fundamentals of social media. Later, you will develop your own social medium and implement a prototype. This will be done in collaboration with marketing students at ECU Perth in Australia who perform a market analysis to identify gaps in current social media platforms. The results from the marketing analysis will be your starting point for your projects. We will run all lectures and meetings online through Zoom at",
@@ -186,7 +186,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 4,
       "linkName": "course1",
       "courseName": "Technology for social media ",
       "imgUrl": "/images/peter-wendt.jpg",

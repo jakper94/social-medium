@@ -29,8 +29,8 @@ const CoursePage = ({ match }) => {
       <div className="quick-Links">
         <h2>Quicklinks</h2>
         <div className="links">
-        <a href="#/assignments/">assignment</a>
-        <a href="#/assignments/">assignment</a>
+        <a href="#/assignments/">Assignment</a>
+        <a href="#/forum/">Forum</a>
         </div>
         
       </div>
