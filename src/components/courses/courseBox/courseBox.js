@@ -23,7 +23,6 @@ const CourseBox = ({
       );
     }
   };
-
   return (
     <a href={"#/course/" + id} className="courseBox">
       <div className="box">

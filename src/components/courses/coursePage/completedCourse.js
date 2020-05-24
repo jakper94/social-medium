@@ -3,12 +3,11 @@ import "./coursePage.scss";
 import CourseInfo from "./courseInfo/courseInfo";
 import Calendar from "./calendar/calendar";
 import courseData from "../../../jsonData/courses.json";
-const CoursePage = ({ match }) => {
-  var ID = match.params.assignID;
+const CompletedCoursePage = ({ match }) => {
+  var ID = match.params.id;
   let id = ID -1;
-  const course = courseData.courses;
-  const teatchers =course[id].teatchers;
-
+  const course = courseData.completedCourses;
+    const teatchers = course[id].teatchers;
   return (
     <div className="coursePage">
       <h1 className="courseName">{course[id].courseName}</h1>
@@ -37,4 +36,4 @@ const CoursePage = ({ match }) => {
     </div>
   );
 };
-export default CoursePage;
+export default CompletedCoursePage;

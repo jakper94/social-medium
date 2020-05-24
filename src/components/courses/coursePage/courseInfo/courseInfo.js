@@ -2,45 +2,27 @@ import React from "react";
 import "./courseInfo.scss";
 import ProfileBox from "./profileBox/profileBox";
 import { IoIosPeople } from "react-icons/io";
-import ProgressBar from "../../../progressBar/progressBar"
-
-const CourseInfo = ({ courseInfo }) => {
+import ProgressBar from "../../../progressBar/progressBar";
+import courseData from "../../../../jsonData/courses.json";
+const CourseInfo = ({ teatchers, assId, courseInfo, progress }) => {
+  const courses = courseData.courses;
   
+
+
   return (
     <div className="courseInfo">
       <h2>Course Information</h2>
-      <p>
-        {courseInfo}
-        In the first part of this course, we will go over some fundamentals of
-        social media. Later, you will develop your own social medium and
-        implement a prototype. This will be done in collaboration with marketing
-        students at ECU Perth in Australia who perform a market analysis to
-        identify gaps in current social media platforms. The results from the
-        marketing analysis will be your starting point for your projects. We
-        will run all lectures and meetings online through Zoom at
-      </p>
+      <p>{courseInfo}</p>
       <div className="profiles">
-        <ProfileBox
-          employment="Head Teacher"
-          profileImage="/images/profile2.jpg"
-          email="something@school.com"
-          name="Carole Jones"
-          linkedIn="https://www.linkedin.com/in/"
-        />
-        <ProfileBox
-          employment="Teacher"
-          profileImage="/images/profile3.jpg"
-          email="something@school.com"
-          name="Steve Johnson"
-          linkedIn="https://www.linkedin.com/in/"
-        />
-        <ProfileBox
-          employment="Supervisor"
-          profileImage="/images/profile1.jpg"
-          email="something@school.com"
-          name="Leif Andersson"
-          linkedIn="https://www.linkedin.com/in/"
-        />
+        {teatchers.map((teatcher) => (
+          <ProfileBox
+            employment={teatcher.employment}
+            profileImage={teatcher.profileImg}
+            email={teatcher.email}
+            name={teatcher.name}
+            linkedIn={teatcher.linkedIn}
+          />
+        ))}
       </div>
       <div className="literature">
         <h2>Literature</h2>
@@ -70,9 +52,9 @@ const CourseInfo = ({ courseInfo }) => {
         </a>
       </div>
       <div className="participants">
-        <IoIosPeople className="peopleicon" /> <h4> 11 participants</h4>
+        <IoIosPeople className="peopleicon" /> <h4> {courses[assId].participants} participants</h4>
       </div>
-    <ProgressBar inputProgress={45}/>
+      <ProgressBar inputProgress={progress} />
     </div>
   );
 };
