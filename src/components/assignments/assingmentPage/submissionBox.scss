@@ -25,17 +25,33 @@
             }
                
             }
-    }
+        }
   
-
+        .passed{
+            h2{
+                color: $passed-color;
+                font-weight: 400;
+            }
+        }
+        .notPassed{
+            h2{
+                color:$notPassed-color;
+                font-weight: 400;
+            }
+        }
+        .notSubmitted{
+            h2{
+                color: $box-text-color;
+                font-weight: 400;
+            }
+        }
+        .submitted{
+            h2{
+                color: $box-text-color;
+                font-weight: 400;
+            }
+        }
 
     
-    .submitted{
-        margin-top: 0px;
-        h3{
-            color:$passed-color;
-            font-weight: 400;
-        }
-    }
 
 }

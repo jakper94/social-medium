@@ -1,54 +1,123 @@
 {
-    "assignments": [
+  "assignments": [
+    {
+      "id": 1,
+      "title": "Lo-Fi prototype",
+      "information": "Your assignment is to create a lo-Fi prototype of a education social media",
+      "duration": 20,
+      "submitted": true,
+      "corrected": true,
+      "passed": true,
+      "deadline": "10 May",
+      "group": true,
+      "groupName": "Group 2",
+      "groupMembers": [
+        { "name": "Anna Andersson", "profileImg": "/images/profile2.jpg" },
+        { "name": "Stephen Williams", "profileImg": "/images/profile1.jpg" },
+        { "name": "Peter Swann", "profileImg": "/images/profile3.jpg" },
+        { "name": "Anna Stone", "profileImg": "/images/profile4.jpg" }
+      ],
+      "description": "You will work in groups of four and design a social medium based on the results of a market analysis conducted by marketing students at ECU Perth. The analysis identifies gaps and potentials for improvement in social media systems in education. Your are going to pick at least one of those gaps, turn them into an idea for a social medium, and implement it in an interactive Lo-Fi prototype. You will continue to work with your idea after this assignment until the end of the course. The students at ECU will provide feedback on your Lo-Fi prototype. This feedback should help you refine your idea and you should address that feedback later when you implement a Hi-Fi prototype in assignment 3.To implement your prototype, you can use programs such as Pop, Adobe XD, or Sketch. You should also analyse what target group your medium has and what benefits it will bring to them. You can present the results of your analysis, for example, using the Honeycomb model or with a business model canvas. Your analysis should address social, economic, market-relevant, and content-related aspects of your design.",
+      "presentation": "You will produce a video with a pitch1 for your social medium. In the pitch, you should discuss commercial sustainability of your social medium and how it creates benefits for its users. You should also include a tour through your prototyp and showcase how it would be used. In addition to the pitch, you will write a short report where you explain how you worked as a team, who has done what parts of the work, and why you have chosen to work the way you did. If you want, you can include some pictures of the design process and different stages of the development. We will also send the pitches to the students at ECU so that they can later provide feedback on your ideas and help you develop them further.",
+      "softwares": [
+        { "adobeXD": true },
+        { "github": false },
+        { "visualStudio": false },
+        { "react": false }
+      ],
+      "litteratures": [
         {
-            "id": 1,
-            "title": "Ouath2",
-            "information": "In this assignment you should create an inlogg through a authorization server. ",
-            "duration": 20,
-            "submitted": true,
-            "corrected":true,
-            "passed": true
-        },
-        {
-            "id": 2,
-            "title": "Lo-Fi prototype",
-            "information": "Your assignment is to create a lo-Fi prototype of a education social media",
-            "duration":20,
-            "submitted": true,
-            "corrected":true,
-            "passed": false
-        },
-        {
-            "id": 3,
-            "title": "Hi-Fi prototype",
-            "information": "Your assignment is to create a Hi-Fi protoype from the Lo-Fi prototype",
-            "duration":50,
-            "submitted": true,
-            "corrected":false,
-            "passed": false
+          "title": "Tutorial",
+          "link": ""
         }
-    ],
-    "quiz":[
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Ouath2",
+      "information": "In this assignment you should create an inlogg through a authorization server. ",
+      "duration": 20,
+      "submitted": true,
+      "corrected": true,
+      "passed": true,
+      "deadline": "20 April",
+      "group": false,
+      "groupName": "",
+      "groupMembers": [{ "name": "", "profileImg": "" }],
+      "description": "In this assignment, you will work alone and use OAuth2 to build a simple web application that allows users to login through, for example, GitHub, Facebook, or Google. After login, the website should display some information about the user that you retrieve from the authentication provider. For users who have logged in before, you should also display when the user logged in last. This means that you will need to store users together with timestamps in some sort of data store. To make you website work with OAuth2, you need to register it at the provider you have chosen (we recommend GitHub). When you register the application, you need to enter a name for the application and its URL. In our case, since we will not publish this application, the URL will be something like http(s)://localhost:XXXX where XXXX is the port. Further, you need to enter a callback URL, for example http(s)://localhost:XXXX/callback. After registering the application, you will get a client ID and a client secret to access the authentication provider. You should keep both client ID and secret hidden from the user, only you and your application should know it.",
+      "presentation": "For this assignment, you will write a report and manage your source code in a git repository, for example at GitHub, GitLab, or Bitbucket. In the report, you should explain how OAuth2 works and how you have solved the assignment. You should also include a link to the repository where you keep your source code (and make sure we have access to it).",
+      "softwares": [
+        { "adobeXD": false },
+        { "github": true },
+        { "visualStudio": true },
+        { "react": true }
+      ],
+      "litteratures": [
         {
-            "id": 1,
-            "quizName" : "Quiz 1",
-            "information": "A quiz about Ouath2",
-            "submitted" : true,
-            "progress":80
+          "title": "Tutorial",
+          "link": ""
         },
         {
-            "id": 2,
-            "quizName" : "Quiz 2",
-            "information": "A quiz about Social Media",
-            "submitted" : true,
-            "progress": 100
-        },
-        {
-            "id": 3,
-            "quizName" : "Quiz 3",
-            "information": "A quiz about marketing",
-            "submitted" : false,
-            "progress": 0
+          "title": "Ouath",
+          "link": ""
         }
-    ]
+      ]
+    },
+
+    {
+      "id": 3,
+      "title": "Hi-Fi prototype",
+      "information": "Your assignment is to create a Hi-Fi protoype from the Lo-Fi prototype",
+      "duration": 50,
+      "submitted": true,
+      "corrected": false,
+      "passed": false,
+      "deadline": "5 June",
+      "group": true,
+      "groupName": "Group 2",
+      "groupMembers": [
+        { "name": "Anna Andersson", "profileImg": "/images/profile2.jpg" },
+        { "name": "Stephen Williams", "profileImg": "/images/profile1.jpg" },
+        { "name": "Peter Swann", "profileImg": "/images/profile3.jpg" },
+        { "name": "Anna Stone", "profileImg": "/images/profile4.jpg" }
+      ],
+      "description": "In this assignment, you will continue to work on your social medium from assignment 1 in groups and implement a Hi-Fi prototype. The prototype should support the main functionalities of your social medium. Each group member should implement one component or functionality of the medium. To provide easy login, you should use your OAuth2 solutions from assignment 2. You should take into account the feedback you received from the students at ECU Perth and use it to improve your initial project ideas. You may also decide not to reflect the feedback in your prototype, however, then you should have a reason for this and you must be able to explain your decision. To collect a bonus point, you should also publish your prototype online, for example on Heroku1 or Firebase2.",
+      "presentation": "You should produce video with a presentation of your prototype. In the video, you should briefly mention what market gap you are addressing and why it is important. Then, you should give a tour of your prototype and walk the viewer through its functionalities. You should also write a report that covers a couple of things: how did you work in the group, what problems did you encounter, how did you solve the problems, how did you address the feedback you received (or why you did not), and what would be the next steps for moving forward with your prototype. You should also briefly discuss the marketing plan from the students at ECU Perth and do a critical analysis of your prototype: what are its strengths and weaknesses? If you have published your prototype online, you should also include its URL.",
+      "softwares": [
+        { "adobeXD": false },
+        { "github": true },
+        { "visualStudio": true },
+        { "react": true }
+      ],
+      "litteratures": [
+        {
+          "title": "React",
+          "link": ""
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "quizName": "Quiz 1",
+      "information": "A quiz about Ouath2",
+      "submitted": true,
+      "progress": 80
+    },
+    {
+      "id": 2,
+      "quizName": "Quiz 2",
+      "information": "A quiz about Social Media",
+      "submitted": true,
+      "progress": 100
+    },
+    {
+      "id": 3,
+      "quizName": "Quiz 3",
+      "information": "A quiz about marketing",
+      "submitted": false,
+      "progress": 0
+    }
+  ]
 }

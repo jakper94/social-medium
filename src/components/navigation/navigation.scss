@@ -11,9 +11,8 @@ $navigation-width: 14%;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
- 
   width: $navigation-width;
-
+  box-shadow: $box-shadow;
   background-color: $color-navigation;
   z-index: 10000;
   .oauth {

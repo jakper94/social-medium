@@ -17,18 +17,16 @@
     color: $color-navigation-text;
   }
   .sign-out-button {
-    width: 70px;
     border-radius: 10px;
-    background-color: gray;
-    h4 {
-      font-size: 12px;
-      padding: 0;
-    }
-
+    display: inline-block;
+    background-color: $button-color;
+    box-shadow: $box-shadow;
+    cursor: pointer;
     &:hover {
-      background-color: black;
-      color: white;
+      background-color: $button-hover-color;
+      color: $button-hover-text;
     }
+   
   }
 }
 .notSignedIn {
@@ -37,4 +35,21 @@
   flex-flow: column;
   justify-content: center;
   align-content: space-between;
+  .login-button{
+    border-radius: 10px;
+    display: inline-block;
+    background-color: $button-color;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    &:hover {
+      background-color: $button-hover-color;
+      color: $button-hover-text;
+    }
+  }
+  .insidePopUp{
+    h2{
+      color:black;
+
+    }
+  }
 }

@@ -3,6 +3,8 @@ import "./assignmentbox.scss"
 
 
 const Assignmentbox = ( {assignment, id, corrected, submitted, passed, info, duration}) => {
+
+
  
   const checkStatus=()=>{
     if (submitted)  {
@@ -56,7 +58,7 @@ const Assignmentbox = ( {assignment, id, corrected, submitted, passed, info, dur
           <h4>{assignment} </h4>
     </div>  
       
-  );
+  ); 
 };
 
 export default Assignmentbox;

@@ -2,12 +2,17 @@ import React, { Component } from "react";
 import firebase from "../../firebase-config";
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 import "./oauth.scss";
+import Popup from "reactjs-popup";
 
 class Oauth extends Component {
   state = { isSignedIn: false };
   uiConfig = {
     signInFlow: "popup",
-    signInOptions: [firebase.auth.FacebookAuthProvider.PROVIDER_ID],
+    signInOptions: [
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.EmailAuthProvider.PROVIDER_ID
+    ],
     callbacks: {
       signInSuccess: () => false,
     },
@@ -34,16 +39,26 @@ class Oauth extends Component {
               className="sign-out-button"
               onClick={() => firebase.auth().signOut()}
             >
-              <h4>sign out</h4>
+              Sign out
             </div>
           </div>
         ) : (
           <div className="notSignedIn">
-              <StyledFirebaseAuth
-                uiConfig={this.uiConfig}
-                firebaseAuth={firebase.auth()}
-              />
-            
+            <h2>Welcome!</h2>
+            <Popup
+              trigger={<div className="login-button">Log in</div>}
+              modal
+              closeOnDocumentClick
+              position="right center"
+            >
+              <div className="insidePopUp">
+                <h2>To log in to this page use one of the listed option below.</h2>
+                <StyledFirebaseAuth
+                  uiConfig={this.uiConfig}
+                  firebaseAuth={firebase.auth()}
+                />
+              </div>
+            </Popup>
           </div>
         )}
       </div>

@@ -1,22 +1,29 @@
 import React from "react";
 import "./litteratureBox.scss"
 import { FaFilePdf } from "react-icons/fa";
+import assignmentData from "../../../jsonData/assignments.json";
 
 
-const LitteratureBox = ( ) => {
+
+const LitteratureBox = ( {assignmentId}) => {
+  const assignments = assignmentData.assignments;
+  const litteratures = assignments[assignmentId].litteratures;
+
+  const checkLitterature =(title, link) =>{
+    return(
+    <a className="pdf" href={link}>
+    <FaFilePdf />
+     <div><p>{title}</p></div>
+</a>
+     ); }
   return (
     
     <div className="litteratureBox">
       <h2 className="literatureTitle">Relevant litterature</h2>
       <div className="literatureFiles">
-          <a className="pdf" href={"https://www.tutorialspoint.com/oauth2.0/oauth2.0_tutorial.pdf"}>
-              <FaFilePdf />
-              <div><p>Tutorial</p></div>
-          </a>
-          <a className="pdf" href={"https://acrobat.adobe.com/se/sv/acrobat/about-adobe-pdf.html"}>
-              <FaFilePdf />
-              <div><p>Title</p></div>
-          </a>
+        {litteratures.map((litterature) =>
+          checkLitterature(litterature.title, litterature.link )
+        )}
       </div>
       <div className="SoftwareBox">
 

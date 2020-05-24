@@ -1,16 +1,18 @@
 import React from "react";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
+import "./app.scss";
+import "../../resources/site.scss";
 import Navigation from "../navigation/navigation";
 import Home from "../home/home";
 import Courses from "../courses/courses";
 import Projects from "../projeccts/projects";
 import Assignments from "../assignments/assignments";
 import RightSideBar from "../right-side-bar/right-side-bar";
-import "./app.scss";
-import "../../resources/site.scss";
 import CoursePage from "../courses/coursePage/coursePage";
-import courseData from "../../jsonData/courses.json";
+import CompletedCoursePage from "../courses/coursePage/completedCourse";
 import AssingmentPage from "../assignments/assingmentPage/assingmentPage";
+
+import courseData from "../../jsonData/courses.json";
 import assignmentData from "../../jsonData/assignments.json";
 import Forum from "../Forum/forum";
 const App = () => {
@@ -28,7 +30,10 @@ const App = () => {
           <Route path="/assignments" component={Assignments} />
           <Route path="/projects" component={Projects} />
           {courses.map((cours) => (
-            <Route path={"/course/" + cours.id} component={CoursePage} />
+            <Route path={"/course/:assignID"} component={CoursePage} />
+          ))}
+          {assignments.map((assignment) => (
+            <Route path={"/assignment/:assignID"} component={AssingmentPage} />
           ))}
           {assignments.map((assignment) => (
             <Route
@@ -37,6 +42,7 @@ const App = () => {
             />
           ))}
           <Route path="/forum" component={Forum} />
+
           <Route from="*" to="/" component={Home} />
         </Switch>
       </div>

@@ -7,51 +7,68 @@ import DocumentBox from "./documentBox";
 import GroupBox from "./groupBox";
 import SoftwareBox from "./softwareBox";
 import assignmentData from "../../../jsonData/assignments.json";
-import Assignments from "../assignments";
 
 
 
+const AssingmentPage = ({match} ) => {
 
-const AssingmentPage = ({ id }) => {
+  var ID = match.params.assignID;
+  let Id = ID -1;
+
   const assignments = assignmentData.assignments;
 
+  const checkGroupStatus = () =>{
+    if (assignments[Id].group){
+      return (     
+      <div className="groupBox">
+        <GroupBox
+          groupName = {assignments[Id].groupName}
+          assignId = {Id}
+            />
+      </div>
+      );
+    }
+  }
 
-/*   function filterById(assignments, id) {
-    return assignments.filter(function(assignments) 
-        {return (assignments['id'] == id);})[0];} */
-
+ 
   return (
     <div className="assignmentPage">
-      <h1 className="assignmentName">Course 1  >  Ouath2 </h1>
+     <h1 className="assignmentName">{assignments[Id].title}</h1>     
       <div className="column-container">
         <div className="over-container">
              <div className ="decsBox">
-                 <DescriptionBox descriptionBox/>
+                 <DescriptionBox 
+                 description = {assignments[Id].description}
+                 presentation = {assignments[Id].presentation}
+                 />
               </div>
               <div className="right-container">
                   <div className="submissionBox"> 
-                     <SubmissionBox submissionBox/>
+                     <SubmissionBox 
+                     submitted = {assignments[Id].submitted}
+                     corrected = {assignments[Id].corrected}
+                     passed = {assignments[Id].passed}
+                     deadline = {assignments[Id].deadline}
+                     /> 
                   </div>
-                  <div className="groupBox">
-                       <GroupBox groupBox/>
-                   </div>
+                  {checkGroupStatus()}
               </div>
         </div>
         <div className="literatureAndSoftware">
           <div className="literatureBox"> 
-            <LitteratureBox literatureBox/>
+            <LitteratureBox literatureBox
+            assignmentId = {Id}/>
+            
           </div>
           <div className="softwareBox">
-            <SoftwareBox softwareBox/>
+            <SoftwareBox softwareBox
+            assignmentId = {Id}/>
           </div>
         </div>
         <div className="documentBox"> 
           <DocumentBox documentBox/>
         </div>
       </div>
-      
-        
-          
   </div>
   );
 };

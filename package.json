@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "firebase": "^7.14.3",
     "firebase-tools": "^8.2.0",
+    "i": "^0.3.6",
     "node-sass": "^4.14.0",
     "react": "^16.13.1",
     "react-calendar": "^3.0.1",
@@ -17,7 +18,8 @@
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-timestamp": "^5.1.0"
+    "react-timestamp": "^5.1.0",
+    "reactjs-popup": "^1.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -3,12 +3,11 @@ import "./coursePage.scss";
 import CourseInfo from "./courseInfo/courseInfo";
 import Calendar from "./calendar/calendar";
 import courseData from "../../../jsonData/courses.json";
-const CoursePage = ({ match }) => {
-  var ID = match.params.assignID;
+const CompletedCoursePage = ({ match }) => {
+  var ID = match.params.AssignID;
   let id = ID -1;
-  const course = courseData.courses;
-  const teatchers =course[id].teatchers;
-
+  const course = courseData.completedCourses;
+    const teatchers = course[id].teatchers;
   return (
     <div className="coursePage">
       <h1 className="courseName">{course[id].courseName}</h1>
@@ -29,12 +28,12 @@ const CoursePage = ({ match }) => {
       <div className="quick-Links">
         <h2>Quicklinks</h2>
         <div className="links">
-        <a href="#/assignments/">Assignment</a>
-        <a href="#/forum/">Forum</a>
+        <a href="#/assignments/">assignment</a>
+        <a href="#/assignments/">assignment</a>
         </div>
         
       </div>
     </div>
   );
 };
-export default CoursePage;
+export default CompletedCoursePage;
