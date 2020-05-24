@@ -12,6 +12,7 @@ import CoursePage from "../courses/coursePage/coursePage";
 import courseData from "../../jsonData/courses.json";
 import AssingmentPage from "../assignments/assingmentPage/assingmentPage";
 import assignmentData from "../../jsonData/assignments.json";
+import Forum from "../Forum/forum";
 const App = () => {
   const courses = courseData.courses;
   const assignments = assignmentData.assignments;
@@ -29,12 +30,13 @@ const App = () => {
           {courses.map((cours) => (
             <Route path={"/course/" + cours.id} component={CoursePage} />
           ))}
-          {assignments.map((assignment)=>(
-            <Route path ={"/assignment/" + assignment.id} component={AssingmentPage} />
-
-          )
-          )}
-          
+          {assignments.map((assignment) => (
+            <Route
+              path={"/assignment/" + assignment.id}
+              component={AssingmentPage}
+            />
+          ))}
+          <Route path="/forum" component={Forum} />
           <Route from="*" to="/" component={Home} />
         </Switch>
       </div>

@@ -10,7 +10,7 @@ const Navigation = () => {
     <div className="navigation">
       <div className="oauth">
         <Oauth />
-        </div>
+      </div>
       <div className="menu">
         <NavLink exact to="/" onClick={() => scrollToTop()}>
           Home
@@ -23,6 +23,9 @@ const Navigation = () => {
         </NavLink>
         <NavLink exact to="/projects" onClick={() => scrollToTop()}>
           projects
+        </NavLink>
+        <NavLink exact to="/forum" onClick={() => scrollToTop()}>
+          Forum
         </NavLink>
       </div>
     </div>

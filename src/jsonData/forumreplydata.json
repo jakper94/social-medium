@@ -1,0 +1,33 @@
+{
+  "reply": [
+    {
+      "id": 1,
+      "name": "Elvira",
+      "date": "2020-02-30",
+      "imgUrl": "/images/profile2.jpg",
+      "message": "I have the same problem."
+    },
+
+    {
+      "id": 2,
+      "name": "Anders",
+      "imgUrl": "/images/profile4.jpg",
+      "date": "2020-02-30",
+      "message": "I think it is because you downloaded the wrong thing."
+    },
+    {
+      "id": 3,
+      "name": "Mike",
+      "imgUrl": "/images/profile3.jpg",
+      "date": "2020-02-30",
+      "message": "No idea!"
+    },
+    {
+      "id": 4,
+      "name": "Elvira",
+      "imgUrl": "/images/profile2.jpg",
+      "date": "2020-02-30",
+      "message": "I know how to fix it! Follow this tutorial :) "
+    }
+  ]
+}

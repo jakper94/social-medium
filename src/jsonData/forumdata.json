@@ -1,0 +1,103 @@
+{
+  "forums": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "imgUrl": "/images/profile1.jpg",
+      "title": " Problem installing code environment",
+      "date": "2020-03-24",
+      "message": "I have a problem with installing the program on my computer because I do not know why.",
+      "replyes": [
+        {
+          "id": 1,
+          "name": "Leif",
+          "date": "2020-02-30",
+          "imgUrl": "/images/profile1.jpg",
+          "message": "I think that sound great...."
+        },
+        {
+          "id": 2,
+          "name": "Carole",
+          "imgUrl": "/images/profile2.jpg",
+          "title": " Question 2....",
+          "date": "2020-03-24",
+          "message": "What is it?????"
+        },
+        {
+          "id": 3,
+          "name": "Steve",
+          "imgUrl": "/images/profile3.jpg",
+          "title": " Question 3....",
+          "date": "2020-03-24",
+          "message": "Does anybody know if it is possible to change?"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Steve",
+      "imgUrl": "/images/profile4.jpg",
+      "title": "Presentations",
+      "date": "2020-03-28",
+      "message": "What is suppose to be in the presentation?",
+      "replyes": [
+        {
+          "id": 1,
+          "name": "Leif",
+          "date": "2020-02-30",
+          "imgUrl": "/images/profile1.jpg",
+          "message": "I think that sound great...."
+        },
+        {
+          "id": 2,
+          "name": "Carole",
+          "imgUrl": "/images/profile2.jpg",
+          "title": " Question 2....",
+          "date": "2020-03-24",
+          "message": "What is it?????"
+        },
+        {
+          "id": 3,
+          "name": "Steve",
+          "imgUrl": "/images/profile3.jpg",
+          "title": " Question 3....",
+          "date": "2020-03-24",
+          "message": "Does anybody know if it is possible to change?"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Carl",
+      "imgUrl": "/images/profile3.jpg",
+      "title": " Seminar 3",
+      "date": "2020-04-01",
+      "message": "When is the seminar and how will it work? ",
+      "replyes": [
+        {
+          "id": 1,
+          "name": "Leif",
+          "date": "2020-02-30",
+          "imgUrl": "/images/profile1.jpg",
+          "message": "I think that sound great...."
+        },
+        {
+          "id": 2,
+          "name": "Carole",
+          "imgUrl": "/images/profile2.jpg",
+          "title": " Question 2....",
+          "date": "2020-03-24",
+          "message": "What is it?????"
+        },
+        {
+          "id": 3,
+          "name": "Steve",
+          "imgUrl": "/images/profile3.jpg",
+          "title": " Question 3....",
+          "date": "2020-03-24",
+          "message": "Does anybody know if it is possible to change?"
+        }
+      ]
+    }
+  ]
+}

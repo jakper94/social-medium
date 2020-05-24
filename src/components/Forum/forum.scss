@@ -1,7 +1,7 @@
 @import "../../resources/variables.scss";
-.grid-container {
+.forum {
   display: grid;
-  grid-template-columns: 20% 20% 20% 10%;
+  grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 10px;
   background-color: white;
   padding: 10px;
@@ -11,11 +11,9 @@
   > div {
     padding: 0px;
   }
-  .item1 {
+  .forums {
     grid-column: 1 / 5;
   }
-
-  .item2 {
-    grid-column: 5/5;
-  }
 }
+
+
