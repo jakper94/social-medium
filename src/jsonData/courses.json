@@ -12,7 +12,7 @@
       "ongoing": true,
       "hp": 7.5,
       "participants": 11,
-      "progress": 10,
+      "progress": 90,
       "teatchers": [
         {
           "id": 0,
@@ -67,16 +67,16 @@
     {
       "id": 3,
       "linkName": "course3",
-      "courseName": "something",
+      "courseName": "Current topic in interaction and design",
       "imgUrl": "/images/peter-wendt.jpg",
       "created-timestamp": "1588686286",
       "info": "In the first part of this course, we will go over so",
       "longInfo": "In the first part of this course, we will go over some fundamentals of social media. Later, you will develop your own social medium and implement a prototype. This will be done in collaboration with marketing students at ECU Perth in Australia who perform a market analysis to identify gaps in current social media platforms. The results from the marketing analysis will be your starting point for your projects. We will run all lectures and meetings online through Zoom at",
       "newCourse": false,
       "ongoing": true,
-      "hp": 7.5,
+      "hp": 9,
       "participants": 77,
-      "progress": 75,
+      "progress": 80,
       "teatchers": [
         {
           "id": 0,
