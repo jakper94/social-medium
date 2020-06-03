@@ -1,1 +1,23 @@
 @import "../../resources/variables.scss";
+
+.projects{
+    margin: 0% 14%;
+    padding: 30px;
+    background-color:  $color-background;
+
+
+        .projectsHead{
+            text-align: left;
+            margin:  30px 0px 30px;
+            color: $color-header-text; 
+        }
+    .projectsboxes{
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+       
+    
+    }
+}
+

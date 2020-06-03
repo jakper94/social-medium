@@ -1,0 +1,31 @@
+@import "../../../resources/variables.scss";
+
+.projectboxx{
+
+    position: relative;
+    width: 300px;
+    height: 320px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background-color: $box-background-color;
+    box-shadow: $box-shadow;
+ 
+
+    .projectImg{
+       margin-top: 15px;
+        img{
+            height: 200px;
+        }
+    }
+    .projectName{
+        margin-top: 20px;
+            h4{
+                color: $color-header-text;
+                font-weight: 1000;        
+                margin: 10px 0 0 10px;
+            }
+    }
+    .projectYear{
+        margin-top: 10px;
+    }
+}

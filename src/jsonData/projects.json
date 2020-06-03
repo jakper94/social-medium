@@ -1,0 +1,20 @@
+{"projects": [
+    {   "id":1,
+        "projectName": "Book Conference",
+        "projectImg": "/images/books.png",
+        "year": "2020"
+    }, 
+    {
+        "id":2,
+        "projectName": "DataTjej Conference",
+        "projectImg":"/images/DataTjej.png",
+        "year": "2021"
+    }, 
+    {
+        "id":3,
+        "projectName":"Hackaton",
+        "projectImg":"/images/hackaton.png",
+        "year":"2021"
+    }
+]
+}
