@@ -33,5 +33,15 @@ $navigation-width: 14%;
       color: $color-active;
       font-weight: bold;
     }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sub-menu {
+      background-color: darken($color: $color-navigation, $amount: 10);
+      a {
+        padding: 10px 0px;
+      }
+    }
   }
 }
