@@ -30,7 +30,7 @@ const RightSideBar = () => {
         )}
         {showMessage && (
           <div className="message">
-            <p>messafe</p>
+            <p>Messages</p>
           </div>
         )}
       </div>
